@@ -1,58 +1,130 @@
-/* Basis-Design */
+/* Allgemein */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: "Arial", sans-serif;
   background: #f9fafb;
-  color: #333;
+  color: #222;
 }
 
-/* Container */
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+/* Header */
+.header {
+  background: #3d7bd6;
+  color: white;
   text-align: center;
+  padding: 40px 20px 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
-/* Überschrift */
-h1 {
-  color: #007acc;
-  margin-bottom: 10px;
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.4;
 }
 
-/* Info-Karten */
-.card {
-  background: white;
-  margin: 15px 0;
+.header span {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.logo {
+  margin: 20px auto;
+  max-width: 200px;
+  border-radius: 16px;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+/* Sections */
+section {
   padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Überschriften */
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Karten für Social Media */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card .icon {
+  font-size: 28px;
+  margin-right: 15px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card .arrow {
+  font-size: 22px;
+  color: #999;
+}
+
+/* Farben für Social Cards */
+.whatsapp {
+  border-left: 5px solid #25D366;
+}
+
+.instagram {
+  border-left: 5px solid #E1306C;
+}
+
+/* Kontaktbereich */
+.contact .info {
+  background: white;
+  padding: 15px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  color: #007acc;
+.contact .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
-.card a {
-  font-size: 16px;
+.contact .row:last-child {
+  margin-bottom: 0;
+}
+
+.contact .icon {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.contact a {
+  color: #007acc;
   text-decoration: none;
-  color: #333;
   font-weight: bold;
-}
-
-.card a:hover {
-  color: #007acc;
-}
-
-/* Mobile Optimierung */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-  .card {
-    padding: 15px;
-  }
 }
