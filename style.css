@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background: #f9fafb;
+  background: #ABBBAB;
   color: #222;
 }
 
 /* Header */
 .header {
-  background: #3d7bd6;
+  background: #ABBBAB;
   color: white;
   text-align: center;
   padding: 40px 20px 20px;
@@ -71,8 +71,13 @@ h2 {
 }
 
 .card .icon {
-  font-size: 28px;
+  width: 40px;
+  height: 40px;
   margin-right: 15px;
+}
+
+.card .text {
+  flex: 1;
 }
 
 .card h3 {
@@ -83,21 +88,12 @@ h2 {
 .card p {
   margin: 2px 0 0;
   font-size: 14px;
-  color: #666;
+  color: #B3CDD7;
 }
 
 .card .arrow {
   font-size: 22px;
-  color: #999;
-}
-
-/* Farben für Social Cards */
-.whatsapp {
-  border-left: 5px solid #25D366;
-}
-
-.instagram {
-  border-left: 5px solid #E1306C;
+  color: #B3CDD7;
 }
 
 /* Kontaktbereich */
@@ -118,7 +114,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.contact .icon {
+.contact .emoji {
   margin-right: 12px;
   font-size: 20px;
 }
