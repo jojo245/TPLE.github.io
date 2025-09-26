@@ -83,6 +83,7 @@ h2 {
 .card h3 {
   margin: 0;
   font-size: 18px;
+  color: #000000;
 }
 
 .card p {
@@ -98,6 +99,14 @@ h2 {
 
 /* Kontaktbereich */
 .contact .info {
+  background: #E0EBEE;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Kontaktbereich */
+.contact .about_me {
   background: #E0EBEE;
   padding: 15px 20px;
   border-radius: 12px;
@@ -169,4 +178,33 @@ h2 {
 .prev:hover, .next:hover {
   background: rgba(0,0,0,0.8);
 }
+
+
+footer { padding: 16px 24px; color:#808080; }
+   /* Link-Stil wie ein normaler Footer-Link */
+   
+   details{padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;}
+   details.impressum summary {
+     cursor: pointer; display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; list-style: none;
+   }
+   /* Pfeil-Icon per CSS */
+   details.impressum summary::before {
+     transition: transform .2s ease; display: inline-block;
+   }
+   details.impressum[open] summary::before { transform: rotate(90deg); }
+
+   /* Inhalt */
+   .imp-content { padding: 12px 0 0 0;  }
+   .imp-grid {
+     display: grid; gap: 8px;
+     grid-template-columns: minmax(180px, 220px) 1fr;
+   }
+   .imp-grid b { color:#808080; }
+   @media (max-width: 560px) {
+     .imp-grid { grid-template-columns: 1fr; }
+   }
+   /* dezente Trennung */
+   .muted { color:#808080; font-size: .95rem; }
 
